@@ -1,0 +1,9 @@
+[
+    {"email": "mail1@fsw.mail.com", "password": "fsw1"},
+    {"email": "mail2@fsw.mail.com", "password": "fsw2"},
+    {"email": "mail3@fsw.mail.com", "password": "fsw3"},
+    {"email": "mail4@fsw.mail.com", "password": "fsw4"},
+    {"email": "mail5@fsw.mail.com", "password": "fsw5"},
+    {"email": "mail6@fsw.mail.com", "password": "fsw6"},
+    {"email": "mail7@fsw.mail.com", "password": "fsw7"}
+]

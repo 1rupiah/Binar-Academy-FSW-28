@@ -1,0 +1,135 @@
+body {
+    box-sizing: border-box;
+    background-color: #9C835F;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin-top: -20px;
+    margin-left: -40px;
+}
+
+.fa-less-than {
+    width: 85px;
+    left: 20px;
+    top: 15px;
+    height: 90px;
+    color: #5a3812;
+    position: relative;
+}
+
+.pageLogo {
+    width: 3.6em;
+}
+
+.pageTitle {
+    left: 15px;
+    top: 4px;
+    position: relative;
+    color: #5a3812;
+    font-weight: 750;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.player,
+.computer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 7em;
+    padding-right: 9em;
+    position: relative;
+    top: -25px;
+}
+
+.rock,
+.paper,
+.scissor {
+    width: 90px;
+}
+
+h3~div {
+    width: 6.5em;
+    margin: 30px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.vs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    top: -130px;
+}
+
+.vs .image:active {
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.vs img,
+.hand {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 736px) {
+    h3~img {
+        width: 4em;
+        margin: 15px;
+    }
+}
+
+#rockImagePlayer,
+#paperImagePlayer,
+#scissorImagePlayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+#rockImageComputer,
+#paperImageComputer,
+#scissorImageComputer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+.vs .justVS {
+    position: relative;
+    top: -100px;
+    color: #BD0000;
+}
+
+/* Script Style */
+.vs .resultDraw,
+.resultComWin,
+.resultPlayerWin {
+    background-color: #106e19;
+    position: relative;
+    top: -150px;
+    font-size: 0.7em;
+    transform: rotate(-15deg);
+    padding: 15px;
+    color: white;
+    letter-spacing: 5px;
+}

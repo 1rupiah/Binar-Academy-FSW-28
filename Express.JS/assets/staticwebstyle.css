@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap");
+
+/* ! Font Style */
+body {font-family: "Open Sans", sans-serif; font-size: 18px; color: white;}
+h1, h2, h3 {font-family: "Open Sans";}
+h1 {font-size: 56px;}
+h3 {font-size: 24px;}
+.my-text-sub {font-size: 14px;}
+.my-text-btn {font-size: 16px;}
+.my-text-nav {font-size: 12px; text-transform: uppercase;}
+.my-text-grey {color: rgba(255, 255, 255, 0.5);}
+.textOrange {color: #ffb548;}
+section {background-size: cover; background-position: center; height: 100vh; width: 100vw;}
+
+/* Homepage - Main Screen */
+/* Navigation Bar */
+section.navBar {background-image: url(./assets/main-bg.jpg);}
+nav {background-color: rgba(0, 0, 0, 0.5);}
+nav .logo {font-size: 24px; letter-spacing: 10%; margin-left: 5%;}
+.logoImage {width: 35px; margin-right: 20px;}
+.navMenu ul li a, .signMenu ul li a {margin-right: 20px;}
+
+/* * Main Title */
+.navBar main {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.navBar .textField {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.navBar .textField h1 {text-transform: uppercase; font-size: 75px; letter-spacing: 16px; width: 100%;}
+.navBar .textField h3 {font-size: 30px; letter-spacing: 8px; margin-top: 10px; font-weight: normal;}
+.navBar .textField button {background-color: #ffb548; margin-top: 30px; padding: 15px 70px;}
+
+/* * The Story */
+.navBar footer {position: center; bottom: 0; left: 0; right: 0;}
+.navBar footer p {margin-top: 750px;}
+
+/* ! Homepage - Game Choice-1 */
+section.galleryCarousel {background-image: url(./assets/the-games-bg.jpg);}
+.galleryCarousel .textField h1 {font-size: 80px;}
+.galleryCarousel .textField h3 {font-size: 30px; }
+/* * Carousel */
+.carouselContainer {width: 90%;}
+.switchLeft {left: -10%;}
+.switchRight {right: -10%;}
+.switchLeft img, .switchRight img {width: 15%;}
+.carousel-indicators [data-bs-target] {width: 15px; height: 15px; border-radius: 50%; margin: 0 5%;}
+
+/* Homepage - Game Choice-2 */
+/* Vertical Bullets */
+section.features {background-image: url(./assets/features.jpg);}
+.features main {
+  width: 20%;
+  position: relative;
+  top: 50%;
+  left: 55%;
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+.features h1 {font-size: 80px;;}
+.features h3 {font-size: 30px;}
+.featureArea {width: 100%;}
+.featureArea img {position: relative; left: -5%;}
+.featureArea p {line-height: 22px; right: -5%; position: relative;}
+
+/* * Bullets */
+.accordion {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.accordion:hover {background-color: rgba(156, 156, 156, 0.5);}
+.panel {padding: 0 18px; display: show; overflow: hidden;}
+
+/* ! Homepage - Game Requirements */
+section.systReq {background-image: url(./assets/requirements.png);}
+.systReq h3 {font-size: 14px; letter-spacing: 3px;}
+.systReq h1 {text-transform: uppercase; letter-spacing: 16px;}
+
+/* * Table */
+.systReq .table-container {width: 50%; margin-top: -3%;}
+.table-container .table h3 {text-transform: uppercase; color: #ffb548; text-align: left;}
+.table-container .table p {color: white;}
+
+/* ! Homepage - Top Scores */
+section.pressQuotes {background-image: url(./assets/top-score-bg.png);}
+/* Left Side */
+.pressQuotes h1 {font-size: 62px;}
+.pressQuotes .textField {width: 65%;}
+
+/* * Right Side */
+.card {background-color: rgba(255, 255, 255, 0.08); width: 450px; margin: 1rem; padding: 1rem;}
+.card.c-one {position: relative; left: 22%;}
+.card.c-two {position: relative; left: 18%;}
+.card .header {margin-bottom: 1.5rem;}
+.img-container img {width: 65px; box-shadow: 8px 4px 2px 2px #ffb548; border-radius: 50%;}
+h3.name {font-size: 24px; margin-bottom: 0;}
+p.date {margin-bottom: 0;}
+.pressQuotes button {background-color: #ffb548; padding: 15px 85px;}
+
+/* ! Newsletter Subscription */
+section.subscribe {background-image: url(./assets/newsletter.png);}
+section.subscribe .container-fluid {height: 100vh;}
+.subscribe h3 {letter-spacing: 4px;}
+.subscribe h1 {letter-spacing: 16px;}
+.subscribe .my-hero-image {position: relative; left: 5%;}
+.subscribe .textField {width: 50%; z-index: 1; margin-left: 10%;}
+.mail {background-color: rgba(255, 255, 255, 0.08); padding: 2px 70px; margin-right: 1%; margin-bottom: 2%;}
+.subs {background-color: #ffb548; padding: 16px 40px; margin-bottom: 2%;}
+
+/* Footer Identity */
+.subscribe footer .menu .nav li a {color: white; margin: 0 0.5rem;}
+.subscribe footer .menu .nav li:nth-child(5) {margin-right: 20px;}
+.subscribe footer .menu .nav li:last-child {margin-right: 0;}
+.copyrights {border-top: 1px solid white; padding-top: 10px; margin-bottom: 20px;}
+
+
+/* * Media Query Tablet */
+@media (max-width: 980px) {
+  /* Homepage - Main Screen */
+  .navBar .text-area h1 {font-size: 56px; letter-spacing: 4px;}
+  .navBar .text-area h3 {letter-spacing: 1px;}
+
+  /* Homepage - Game Choice-1 */
+  .galleryCarousel .text-area h3, .galleryCarousel .text-area h1 {text-align: center;}
+  .carousel-indicators {top: 100%;}
+  .carousel-indicators [data-bs-target] {width: 10px; height: 10px;}
+
+  /* Homepage - Game Choice-2 */
+  .features main {width: 60%; left: 40%; -ms-transform: translate(-25%, -50%); transform: translate(-25%, -50%);}
+  .features h3 {letter-spacing: 1px;}
+  .features h1 {letter-spacing: 5px;}
+
+  /* Homepage - Game Requirements */
+  .systReq .table-container {width: 80%;}
+  .systReq .container-lg {padding: 2rem;}
+  h3.text-center {letter-spacing: 1px;}
+  .systReq h1 {letter-spacing: 4px;}
+
+  /* Homepage - Top Scores */
+  .pressQuotes .container-lg {padding: 1.5rem;}
+  .pressQuotes .text-area {width: 100%;}
+  .card {width: 100%; margin-left: 0;}
+  .card.c-one {position: relative; left: 0;}
+  .card.c-two {position: relative; left: 0;}
+}
+
+@media (max-width: 580px) {
+  /* Homepage - Top Scores */
+  .pressQuotes h1 {letter-spacing: 4px;}
+  .pressQuotes {height: 100%;}
+  .pressQuotes button {background-color: #ffb548; padding: 10px 40px;}
+
+  /* Newsletter Subscription */
+  .subscribe h3 {letter-spacing: 1px;}
+  .subscribe h1 {letter-spacing: 4px;}
+  .subscribe .textField {width: 80%; position: relative; left: -20%;}
+  .mail {padding: 2px 40px;}
+  .subs {padding: 16px 40px;}
+}
+
+@media (max-width: 380px) {
+  /* Homepage - Game Requirements */
+  section.systReq {height: 100%;}
+  .systReq h1 {letter-spacing: 1px;}
+
+  /* Newsletter Subscription */
+  .subscribe {height: 100%;}
+  section.subscribe .container-fluid {height: 100%;}
+  .subscribe .container-lg {margin: 2rem;}
+  .subscribe .textField {width: 80%; position: relative; left: -25%;}
+  .subscribe h1 {font-size: 40px;}
+  .mail {padding: 2px 15px;}
+  .subs {padding: 8px 10px;}
+}
